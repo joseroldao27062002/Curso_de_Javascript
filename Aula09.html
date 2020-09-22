@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Aula09</title>
+</head>
+<body>
+	<h1 id = "titulo">Curso de javascript</h1>	
+</body>
+<script type="text/javascript">
+	document.write("Aula sobre <strong>biblioteca Math</strong><br><strong>variáveis let</strong> e <strong>funções</strong>");
+
+	function raizQuadrada(numero) {
+		return Math.sqrt(numero);
+	}
+
+	function elevacao(base) {
+		let expoente = prompt("Digite o expoente desejado: ");
+		return Math.pow(base, expoente);
+	}
+
+	function principal() {
+		document.getElementById("titulo").style.color = "blue";
+		
+		numero = prompt("Digite o número desejado");
+		opcao = prompt("*** Opções ***\n1-raiz quadrada\n2-potência\n3-As duas operações");
+
+		if (opcao == 1) {
+			alert(raizQuadrada(numero));
+		} else if (opcao == 2){
+			alert(elevacao(numero));
+		} else if (opcao == 3) {
+			alert(raizQuadrada(numero));
+			alert(elevacao(numero));
+		} else {
+			alert("A opção digitada não está disponível nas opções presentes");
+		}
+	}
+
+	principal();
+</script>
+</html>

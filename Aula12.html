@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula12</title>
+	<meta charset = "utf-8">
+	<style type = "text/css">
+		body {
+			background-color: blue;
+		}
+
+		#videogame {
+			width: 200px;
+			height: 379px;
+			background-repeat: no-repeat;
+		}
+
+		button {
+			font-size: 10px;
+			width: 100px;
+			height: 45px;
+			border-radius: 5px 5px 5px 5px;
+		}
+		
+		.v1 {
+			background-image: url("imgs/ps2.jpg");
+			background-size: 200px 379px;
+		}
+
+		.v2 {
+			background-image: url("imgs/ps3.jpg");
+			background-size: 200px 379px;
+		}
+
+		.v3 {
+			background-image: url("imgs/ps4.jpg");
+			background-size: 200px 379px;
+		}
+
+		.v4 {
+			background-image: url("imgs/ps5.png");
+			background-size: 200px 379px;
+		}
+
+		.v5 {
+			background-image: url("imgs/xbox.jpg");
+			background-size: 200px 379px;
+		}
+
+		.v6 {
+			background-image: url("imgs/xbox360.jpg");
+			background-size: 200px 379px;
+		}
+
+		.v7 {
+			background-image: url("imgs/xboxone.jpg");
+			background-size: 200px 379px;
+		}
+
+		.v8 {
+			background-image: url("imgs/xboxseries.jpg");
+			background-size: 200px 379px;
+		}
+	</style>
+
+	<script type = "text/javascript">
+		function trocaFoto(v) {
+			var obj = document.getElementById("videogame");
+			if (v == 1) {
+				obj.setAttribute("class","v1");
+			} else if (v == 2) {
+				obj.setAttribute("class", "v2");
+			} else if (v == 3) {
+				obj.setAttribute("class", "v3");
+			} else if (v == 4) {
+				obj.setAttribute("class", "v4");
+			} else if (v == 5) {
+				obj.setAttribute("class", "v5");
+			} else if (v == 6) {
+				obj.setAttribute("class", "v6");
+			} else if (v == 7) {
+				obj.setAttribute("class", "v7");
+			} else if (v == 8) {
+				obj.setAttribute("class", "v8");
+			}
+		}
+	</script>	
+</head>
+<body>
+	<button onclick = "trocaFoto(1)">PS2</button>
+	<button onclick = "trocaFoto(2)">PS3</button>
+	<button onclick = "trocaFoto(3)">PS4</button>
+	<button onclick = "trocaFoto(4)">PS5</button>
+	<button onclick = "trocaFoto(5)">XBOX</button>
+	<button onclick = "trocaFoto(6)">XBOX360</button>
+	<button onclick = "trocaFoto(7)">XBOXONE</button>
+	<button onclick = "trocaFoto(8)">XBOXSERIES</button>
+	<div id = "videogame"></div>
+</body>
+<script type = "text/javascript">
+		function trocaFoto(v) {
+			var obj = document.getElementById("videogame");
+			if (v == 1) {
+				obj.setAttribute("class","v1");
+			} else if (v == 2) {
+				obj.setAttribute("class", "v2");
+			} else if (v == 3) {
+				obj.setAttribute("class", "v3");
+			} else if (v == 4) {
+				obj.setAttribute("class", "v4");
+			} else if (v == 5) {
+				obj.setAttribute("class", "v5");
+			} else if (v == 6) {
+				obj.setAttribute("class", "v6");
+			} else if (v == 7) {
+				obj.setAttribute("class", "v7");
+			} else if (v == 8) {
+				obj.setAttribute("class", "v8");
+			}
+		}
+	</script>	
+</html>

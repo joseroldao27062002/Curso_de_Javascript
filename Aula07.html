@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula07</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	document.write("Aula sobre calendário<br>");
+	var meses = new Array("janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro");
+	var data = new Date();
+	document.write("Dia: " + data.getDate() + "<br>");
+	document.write("Mês: " + meses[data.getMonth()] + "<br>");
+	document.write("Ano: " + data.getFullYear() + "<br>");
+	document.write("Horas - " + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds() + "<br>");
+	document.write("Milisegundos desde 1 de janeiro<br>");
+	document.write(Date.now() + "<br>");
+	data.setDate(25);
+	document.write("Dia modificado<br>");
+	document.write("Dia: " + data.getDate() + "<br>");
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula08</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<div id = "div1">	
+		<h1 id = titulo>Aula sobre getElementById, getElementByName, querySelectorAll e innerHTML</h1>
+		<h3>Aula08</h3>
+		<h3>Aula com muito assunto</h3>
+		<p>Aula do curso completo de javascript </p>
+	</div>
+</body>
+<script type="text/javascript">
+	document.getElementById("titulo").style.color = "yellow";
+	document.getElementById("div1").style.backgroundColor = "blue";
+
+	for (var c = 0; c < document.querySelectorAll("h3, p").length; c++) {
+		document.write(document.querySelectorAll("h3, p")[c].innerHTML + "<br>");
+	}
+	
+	for (var c = 0; c < document.getElementsByTagName("h3").length; c++) {
+		document.getElementsByTagName("h3")[c].innerHTML =  "Curso de Javascript";
+		document.getElementsByTagName("h3")[c].style.fontSize = "50px";
+		document.getElementsByTagName("h3")[c].style.color = "orange";
+	}
+
+	alert(document.getElementById("titulo").innerHTML);
+
+	confirm("Você entendeu esse programa?");
+
+	
+</script>
+</html>

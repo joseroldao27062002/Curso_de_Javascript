@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula02</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	alert("Dias da semana");
+	var numero = parseInt(prompt("Digite o número desejado"));
+	//uso do switch case
+	switch(numero) {
+		case 1:
+			document.write("Domingo");
+			break;
+		case 2:
+			document.write("Segunda-feira");
+			break;
+		case 3:
+			document.write("Terça-feira");
+			break;
+		case 4:
+			document.write("Quarta-feira");
+			break;
+		case 5:
+			document.write("Quinta-feira");
+			break;
+		case 6:
+			document.write("Sexta-feira");
+			break;
+		case 7:
+			document.write("Sábado");
+			break;
+		default:
+			document.write("O número digitado não é correspondente aos dias da semana");
+			break;
+	}
+	var res = confirm("Você entendeu o script?");
+	if (res == true) {
+		alert("Você entendeu o script");
+	} else {
+		alert("Você não entendeu o script");
+	}
+
+	document.write("<br>Aula sobre switch case");
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula11</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<p id = "txt">CFB Cursos-Curso de Javascript-aula11 de javascript</p>
+</body>
+<script type="text/javascript">
+	//Aula 11 de javascript
+	/*
+	Uso dos métodos usados para 
+	manipulação de strings
+	*/
+	var texto = document.getElementById("txt").innerHTML;
+	var texto2 = "CFB Cursos"; 
+	//Uso do método "match"
+	var res = texto.match(/\d/ig);
+	document.write(res + "<br>");
+	res = texto.match(/javascript/ig);
+	document.write(res + "<br>");
+	res = texto.match("de");
+	document.write(res + "<br>");
+	//Uso do método "charCodeAt"
+	res = texto.charCodeAt(2);
+	document.write(res + "<br>");
+	//Uso do método "search"
+	res = texto.search(/javascript/i);
+	document.write(res + "<br>");
+	//Uso do método "fromCharCode"
+	res = String.fromCharCode(66);
+	document.write(res + "<br>");
+	//Uso do método "localeCompare"
+	res = texto.localeCompare(texto2);
+	document.write(res + "<br>");
+	//Uso do métdo "slice"
+	res = texto.slice(11, 30);
+	document.write(res + "<br>");
+</script>
+</html>

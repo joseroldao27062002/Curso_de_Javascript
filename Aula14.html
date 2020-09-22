@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula14</title>
+	<meta charset = "utf-8">
+	<style type="text/css">
+		#painel {
+			border-style: solid;
+			border-color: initial;
+			border-radius: 5px 5px 5px 5px; 
+			background-color: gray;
+			width: 25%;
+			height: 275px;
+		}
+
+		body {
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id = "painel">
+		
+	</div>
+</body>
+<script type="text/javascript">
+	var painel = document.getElementById("painel");
+
+	function abrir() {
+		painel.innerHTML = "Navegador: " + navigator.appName + "<hr>";
+		painel.innerHTML += "Cookie: " + navigator.cookieEnabled + "<hr>";
+		painel.innerHTML += "S.O: " + navigator.platform + "<hr>";
+		painel.innerHTML += "Versão: " + navigator.appVersion + "<hr>";
+		painel.innerHTML += "Online: " + navigator.onLine + "<hr>";
+		painel.innerHTML += "Idioma: " + navigator.language + "<hr>";
+		painel.innerHTML += "Engine: " + navigator.product;
+	}
+
+	abrir();
+</script>
+</html>

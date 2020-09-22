@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 13</title>
+	<meta charset = "utf-8">
+	<script type="text/javascript">
+		var painel;
+		
+		function abrirJanela() { 
+			window.open("Aula13.1.html", "_blank", "width = 500 height = 500");
+		}
+
+		function inicia() {
+			var qtdframes = window.length();
+			painel = document.getElementById("painel").innerHTML = qtdframes; 
+		}
+
+		abrirJanela();
+	</script>
+</head>
+<body>
+	<div id = "painel"></div>
+	<iframe src=""></iframe>
+	<iframe src=""></iframe>
+	<iframe src=""></iframe>
+</body>
+</html>

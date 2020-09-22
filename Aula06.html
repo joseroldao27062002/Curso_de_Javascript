@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula06</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	document.write("Aula sobre excessões<br>");
+	var numeros = new Array();
+	
+	for (var c = 1; c <= 5; c++) {
+		try {
+			var n = parseInt(prompt("Digite o número desejado: "));
+		} catch (e) {
+			alert("O elemento digitado não é compatível com o tipo");
+		} finally {
+			alert("Execução finalizada");
+		}
+		numeros.push(n);
+	}
+	if (confirm("Você entendeu o algoritmo?") == true) {
+		document.write("Parabéns você entendeu a aula<br>");
+	} else { 
+		document.write("Você não entendeu a aula<br>"); 
+	}
+	for (var c = 0; c < numeros.length; c++) {
+		document.write(numeros[c] + " ");	
+	}
+</script>
+</html>

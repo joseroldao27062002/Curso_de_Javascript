@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Aula02</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//Uso do método alert
+	alert("Algoritmo de decisão");
+	//Criação de variáveis
+	var n1 = prompt("Digite o primeiro número");
+	var n2 = prompt("Digite o segundo número");
+	/*Estrutura de decisão*/
+	if (n1 > n2) {
+		document.write("O primeiro número é maior que o segundo número<br>");
+	} else if (n2 > n1) {
+		document.write("O segundo número é maior que o primeiro número<br>");
+	} else {
+		document.write("Os números são iguais<br>");
+	}
+
+	/*Uso do método confirm*/
+	var res = confirm("Você entendeu o script?");
+	if (res == true) {
+		document.write("Você entendeu o script");
+	} else {
+		document.write("Você não entendeu o script");
+	}
+
+	document.write("<br>Aula sobre método prompt,<br> método confirm<br> e estrutura de decisão");
+</script>
+</html>

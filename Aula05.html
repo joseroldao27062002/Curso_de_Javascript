@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula04</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	alert("Vetores");
+	var numeros1 = new Array();
+	//uso do método push
+	numeros1.push("Lanterna");
+	numeros1.push("Pistola");
+	numeros1.push("Cura");
+	numeros1.push("Torniquete");
+	numeros1.push("Faca");
+	numeros1.push("Taco");
+	numeros1.push("Espada");
+	numeros1.push("Escudo");
+	numeros1.push("Chinelo");
+	numeros1.push("Colete");
+
+	for (var c = 0; c < numeros1.length; c++) {
+		document.write(numeros1[c] + "<br>");
+	}
+
+	document.write("Posição do elemento selecionado: "  + numeros1.indexOf("Pistola") + "<br>");
+	document.write("Elemento removido: " + numeros1.pop() + "<br>");
+	numeros1.unshift("Metralhadora")
+
+	for (var c = 0; c < numeros1.length; c++) {
+		document.write(numeros1[c] + "<br>");
+	}
+	document.write("Elemento removido do primeiro índice: " + numeros1.shift() + "<br>");
+
+	for (var c = 0; c < numeros1.length; c++) {
+		document.write(numeros1[c] + "<br>");
+	}
+
+	var numeros2 = new Array();
+	//uso do método push
+	numeros2.push("Calça");
+	numeros2.push("Bota");
+	numeros2.push("Capacete");
+	numeros2.push("Cotoveleira");
+	numeros2.push("Joelheira");
+	numeros2.push("Granada");
+	numeros2.push("Silenciador");
+	numeros2.push("Munição");
+	numeros2.push("Vant");
+	numeros2.push("Armadilha");
+
+	var numeros3 = numeros1.concat(numeros2);	
+	document.write("*** Junção de vetores ***<br>");
+	for (var c = 0; c < numeros3.length; c++) {
+		document.write(numeros3[c] + "<br>");
+	}
+	document.write(numeros3.join() + "<br>")
+	document.write(numeros3.reverse().join())
+</script>
+</html>

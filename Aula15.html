@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula15</title>
+	<meta charset = "utf-8">
+	<style type = "text/css">
+		body {
+			background-color: black
+		}
+
+		p {
+			font-size: 60px;
+			color: white;
+		}
+	</style>
+	<script type = "text/javascript">
+		var p = document.createElement("p")
+		var t = document.createTextNode("Aula de Javascript - Aula15");
+		//document.getElementByTagName("p").style.color = "blue";
+
+		function inicia() {
+			p.appendChild(t);	
+			document.body.appendChild(p);	
+		}
+
+		window.addEventListener("load", inicia);
+	</script>
+</head>
+<body>
+</body>
+</html>
