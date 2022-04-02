@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula21</title>
+		<meta charset = "utf-8">
+		<script type = "text/javascript">
+			alert('Olá usuário, olharemos o conceitos de parâmetros REST hoje, veja o resultado no console');
+			document.write("Uso de funções anônimas");
+		
+			const soma = new Function("...n", "let soma=0;for (var i of n){soma+=i;}return soma;");
+		
+			var resultado = soma;
+			console.log("Resultado do retorno da função: " + resultado(4, 5));
+			console.log("Resultado do retorno da função: " + soma(3, 2, 3));
+			console.log("Resultado da soma do uso das duas funções: "+  (resultado(4, 5, 4, 9) + soma(3, 2, 3)))
+		</script>
+	</head>
+	<body>
+	</body>
+	<body>
+</html>

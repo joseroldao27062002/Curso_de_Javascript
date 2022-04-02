@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula17</title>
+		<meta charset = "utf-8">
+		<script type = "text/javascript">
+			alert('Olá usuário')
+			document.write("Uso de for in e for of, veja o resultado no console");
+			var n1 = [1,2,3,4,5];
+			var n2 = [6,7,8,9,10];
+
+			var Pessoa = {
+				nome: "José",
+				sobrenome: "Roldão Ribeiro Neto",
+				idade: 20
+			}
+			
+			console.log(n1);
+			console.log(n2);
+			
+			for (var elemento of n1) {
+				console.log(elemento);
+			}
+
+			for (var atributo in Pessoa) {
+				console.log(atributo + ": " + Pessoa[atributo]);
+			}		
+		</script>
+	</head>
+	<body>
+	</body>
+	<body>
+</html>

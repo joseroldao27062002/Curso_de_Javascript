@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula17</title>
+		<meta charset = "utf-8">
+		<script type = "text/javascript">
+			alert('Olá usuário')
+			document.write("Uso do operador spread, veja o resultado no console");
+			var n1 = [1,2,3,4,5];
+			var n2 = [6,7,8,9,10];
+
+			console.log(n1);
+			console.log(n2);
+			console.log(...n1, ...n2);
+
+			function somaElementos(n1, n2, n3, n4, n5) {
+				return n1 + n2 + n3 + n4 + n5;
+			}
+
+			console.log("*** Soma dos elementos de um vetor com o uso do spread ***")
+			console.log("Soma dos elementos do primeiro vetor: " + somaElementos(...n1))
+			console.log("Soma dos elementos do segundo vetor: " + somaElementos(...n2))
+
+		</script>
+	</head>
+	<body>
+	</body>
+	<body>
+</html>
